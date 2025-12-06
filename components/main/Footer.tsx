@@ -6,69 +6,66 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
-
 import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
-
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
-
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
-            </div>
+    <footer
+      id="site-footer"
+      className="w-full bg-transparent p-[15px] text-gray-200 shadow-lg"
+    >
+      <div className="m-auto flex w-full flex-col items-center justify-center">
+        <div className="flex h-full w-full flex-row flex-wrap items-center justify-around">
+          <div className="flex h-auto min-w-[200px] flex-col items-center justify-start">
+            <div className="text-[16px] font-bold">Community</div>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <FaYoutube />
+              <span className="ml-[6px] text-[15px]">Youtube</span>
+            </p>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <RxGithubLogo />
+              <span className="ml-[6px] text-[15px]">Github</span>
+            </p>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <RxDiscordLogo />
+              <span className="ml-[6px] text-[15px]">Discord</span>
+            </p>
+          </div>
+          <div className="flex h-auto min-w-[200px] flex-col items-center justify-start">
+            <div className="text-[16px] font-bold">Social Media</div>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <FaYoutube />
+              <span className="ml-[6px] text-[15px]">Instagram</span>
+            </p>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <RxGithubLogo />
+              <span className="ml-[6px] text-[15px]">Twitter</span>
+            </p>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <RxDiscordLogo />
+              <span className="ml-[6px] text-[15px]">Linkedin</span>
+            </p>
+          </div>
+          <div className="flex h-auto min-w-[200px] flex-col items-center justify-start">
+            <div className="text-[16px] font-bold">About</div>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <span className="ml-[6px] text-[15px]">Become Sponsor</span>
+            </p>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <span className="ml-[6px] text-[15px]">Learning about me</span>
+            </p>
+            <p className="my-[15px] flex cursor-pointer flex-row items-center">
+              <span className="ml-[6px] text-[15px]">mifwebchain@gmail.com</span>
+            </p>
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Footer
+        <div className="mb-[20px] text-center text-[15px]">
+          &copy; WebChain Dev 2023 Inc. All rights reserved
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
