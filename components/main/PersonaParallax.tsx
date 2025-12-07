@@ -80,7 +80,7 @@ const PersonaParallax = () => {
             const yLeft = useTransform(
               scrollYProgress,
               [start, mid, end],
-              ["20vh", "0vh", "-20vh"]
+              ["18vh", "0vh", "-18vh"]
             );
             const opacityLeft = useTransform(
               scrollYProgress,
@@ -92,7 +92,7 @@ const PersonaParallax = () => {
             const yRight = useTransform(
               scrollYProgress,
               [start, mid, end],
-              ["-20vh", "0vh", "20vh"]
+              ["-18vh", "0vh", "18vh"]
             );
             const opacityRight = useTransform(
               scrollYProgress,
