@@ -5,6 +5,7 @@ import PersonaParallax from "@/components/main/PersonaParallax";
 import ScrollTextSection from "@/components/main/ScrollTextSection";
 import Skills from "@/components/main/Skills";
 import StarsCanvas from "@/components/main/StarBackground";
+import Taskmaster from "@/components/main/Taskmaster";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <div className="relative z-10 flex flex-col gap-20">
             <Skills />
             <Encryption />
+            <Taskmaster />
             {/* <Projects /> */}
           </div>
         </section>
