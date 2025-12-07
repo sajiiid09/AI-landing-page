@@ -76,12 +76,7 @@ const PersonaParallax = () => {
             const fadeInEnd = start + segmentLength * 0.2;
             const fadeOutStart = end - segmentLength * 0.2;
 
-            // LEFT (image) arc: bottom-left → center-left → top-left
-            const xLeft = useTransform(
-              scrollYProgress,
-              [start, mid, end],
-              ["-15vw", "-6vw", "-14vw"]
-            );
+            // LEFT: images move straight up
             const yLeft = useTransform(
               scrollYProgress,
               [start, mid, end],
@@ -93,12 +88,7 @@ const PersonaParallax = () => {
               [0, 1, 1, 0]
             );
 
-            // RIGHT (text) arc: top-right → center-right → bottom-right
-            const xRight = useTransform(
-              scrollYProgress,
-              [start, mid, end],
-              ["15vw", "6vw", "14vw"]
-            );
+            // RIGHT: text moves straight down
             const yRight = useTransform(
               scrollYProgress,
               [start, mid, end],
@@ -114,8 +104,8 @@ const PersonaParallax = () => {
               <Fragment key={`${persona.title}-${index}`}>
                 {/* LEFT: image card */}
                 <motion.div
-                  style={{ x: xLeft, y: yLeft, opacity: opacityLeft }}
-                  className="absolute"
+                  style={{ y: yLeft, opacity: opacityLeft }}
+                  className="absolute left-[15%]"
                 >
                   <div className="relative h-[260px] w-[200px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-white/5 backdrop-blur">
                     <Image
@@ -132,8 +122,8 @@ const PersonaParallax = () => {
 
                 {/* RIGHT: text card */}
                 <motion.div
-                  style={{ x: xRight, y: yRight, opacity: opacityRight }}
-                  className="absolute"
+                  style={{ y: yRight, opacity: opacityRight }}
+                  className="absolute right-[15%]"
                 >
                   <div className="w-[260px] md:w-[320px] rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 md:p-6 shadow-xl text-white">
                     <h3 className="text-lg md:text-xl font-semibold mb-2">{persona.title}</h3>
